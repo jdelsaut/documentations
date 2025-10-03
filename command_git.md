@@ -1,0 +1,3 @@
+Git clone git@git...
+
+explain ssh key gen
