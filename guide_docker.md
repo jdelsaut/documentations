@@ -59,9 +59,14 @@ docker compose start       # Relancer des services arrêtés
 docker compose exec service_name bash   # Exécuter une commande dans un service
 ```
 ### Divers
-
+```bash
 docker compose config --services
 docker volume prune
+docker compose up --build -d
+docker compose exec db psql -U postgres -d air-collecte-db
+docker compose exec web alembic upgrade head
+docker compose logs web
+ ```
 ---
 
 ## 🚀 Exemple de `docker-compose.yml`
