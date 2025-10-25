@@ -58,7 +58,10 @@ docker compose stop        # Arrêter les services (sans les supprimer)
 docker compose start       # Relancer des services arrêtés
 docker compose exec service_name bash   # Exécuter une commande dans un service
 ```
+### Divers
 
+docker compose config --services
+docker volume prune
 ---
 
 ## 🚀 Exemple de `docker-compose.yml`
